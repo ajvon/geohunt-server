@@ -1,0 +1,4 @@
+{"ts":1368978309868,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1368978360469,"patch":[[{"diffs":[[1,"Wilkommen!"]],"start1":0,"start2":0,"length1":0,"length2":10}]],"length":10,"saved":false}
+{"ts":1368978407847,"patch":[[{"diffs":[[1,"<h1>"],[0,"Wilkomme"]],"start1":0,"start2":0,"length1":8,"length2":12},{"diffs":[[0,"lkommen!"],[1," - GeoHund</h1>\n<p>Vítejte na lovu geopsů</p>"]],"start1":6,"start2":6,"length1":8,"length2":53}]],"length":59,"saved":false}
+{"ts":1368982193771,"patch":[[{"diffs":[[0,"<h1>"],[-1,"Wilkommen! - GeoHund</h1>\n<p>Vítejte na lovu geopsů</p"],[1,"GeoHunt - úvodní stránka</h1>\n<div><%= link_to('Uživatelé', users_path) %></div"],[0,">"]],"start1":0,"start2":0,"length1":59,"length2":84}]],"length":84,"saved":false}

@@ -1,0 +1,2 @@
+{"ts":1368900989959,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"class User < ActiveRecord::Base\n  # attr_accessible :title, :body\nend\n"]],"start1":0,"start2":0,"length1":0,"length2":70}]],"length":70}
+{"contributors":[],"silentsave":false,"ts":1368910715739,"patch":[[{"diffs":[[0,"e\n  "],[-1,"#"],[1," "],[0," att"]],"start1":30,"start2":30,"length1":9,"length2":9},{"diffs":[[0,"le :"],[-1,"title, :body"],[1,"username, :gps"],[0,"\nend"]],"start1":49,"start2":49,"length1":20,"length2":22}]],"length":72,"saved":false}

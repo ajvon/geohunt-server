@@ -1,0 +1,3 @@
+{"ts":1368978206511,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1368978257429,"patch":[[{"diffs":[[1,"class HomeController < ApplicationController\n    \n    \n    \nend"]],"start1":0,"start2":0,"length1":0,"length2":63}]],"length":63,"saved":false}
+{"ts":1368978264607,"patch":[[{"diffs":[[0,"er\n    \n    "],[1,"def index\n    end"],[0,"\n    \nend"]],"start1":42,"start2":42,"length1":21,"length2":38}]],"length":80,"saved":false}
