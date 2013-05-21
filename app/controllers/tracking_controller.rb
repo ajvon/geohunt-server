@@ -10,12 +10,17 @@ class TrackingController < ApplicationController
         @user.longitude = params[:longitude]
         @user.save()
         
+        @user.user_tracks.create(:date => DateTime.now, :latitude => @user.latitude, :longitude => @user.longitude)
+        
         respond_with(@user)
     end
     
     def show_users
-        #respond_with(Geocoder::Calculations.compass_point(355))
         respond_with(User.near([50.118762,14.492254], 1000, { :units => :km })) 
+    end
+    
+    def show_user_track
+        respond_with(User.find(params[:id]).user_tracks)
     end
     
 end

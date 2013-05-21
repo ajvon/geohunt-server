@@ -9,3 +9,5 @@
 {"ts":1369035497544,"patch":[[{"diffs":[[0,"4], 1000"],[1,", { :units => :km }"],[0,")) \n    "]],"start1":462,"start2":462,"length1":16,"length2":35}]],"length":510,"saved":false}
 {"ts":1369035540167,"patch":[[{"diffs":[[0,"=> :"],[-1,"k"],[0,"m"],[1,"i"],[0," }))"]],"start1":481,"start2":481,"length1":10,"length2":10}]],"length":510,"saved":false}
 {"ts":1369035547369,"patch":[[{"diffs":[[0,"=> :"],[1,"k"],[0,"m"],[-1,"i"],[0," }))"]],"start1":481,"start2":481,"length1":10,"length2":10}]],"length":510,"saved":false}
+{"contributors":[],"silentsave":false,"ts":1369073876684,"patch":[[{"diffs":[[0,"()\n        \n"],[1,"        UserTrack.new(:datetime => DateTime.now, :user => @user, :latitude => @user.latitude, :longitude => @user.longitude)\n        \n"],[0,"        resp"]],"start1":275,"start2":275,"length1":24,"length2":158}]],"length":644,"saved":false}
+{"ts":1369073951227,"patch":[[{"diffs":[[0,"date"],[-1,"time"],[0," => "]],"start1":310,"start2":310,"length1":12,"length2":8}]],"length":640,"saved":false}
