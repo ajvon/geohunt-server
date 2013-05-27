@@ -11,5 +11,23 @@
 </p>
 
 
+<h2>Držené pešky</h2>
+<table>
+  <tr>
+    <th>Název</th>
+    <th>GPS</th>
+    <th>Body</th>
+  </tr>
+
+<% @user.tokens.each do |token| %>
+  <tr>
+    <td><%= token.name %></td>
+    <td><%= token.latitude %>, <%= token.longitude %></td>
+    <td><%= token.points_count %>b/<%= token.points_interval %>s (<%= token.default_points_count %>b/<%= token.default_points_interval %>s)</td>
+  </tr>
+<% end %>
+</table>
+
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

@@ -4,4 +4,6 @@ class User < ActiveRecord::Base
   reverse_geocoded_by :latitude, :longitude
   
   has_many :user_tracks
+  has_many :tokens
+  
 end

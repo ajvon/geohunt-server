@@ -11,7 +11,35 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130520104120) do
+ActiveRecord::Schema.define(:version => 20130523175502) do
+
+  create_table "token_tracks", :force => true do |t|
+    t.float    "latitude"
+    t.float    "longitude"
+    t.datetime "date"
+    t.integer  "token_id"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "token_tracks", ["token_id"], :name => "index_token_tracks_on_token_id"
+  add_index "token_tracks", ["user_id"], :name => "index_token_tracks_on_user_id"
+
+  create_table "tokens", :force => true do |t|
+    t.string   "name"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.integer  "default_points_interval"
+    t.integer  "default_points_count"
+    t.integer  "points_interval"
+    t.integer  "points_count"
+    t.integer  "user_id"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  add_index "tokens", ["user_id"], :name => "index_tokens_on_user_id"
 
   create_table "user_tracks", :force => true do |t|
     t.datetime "date"

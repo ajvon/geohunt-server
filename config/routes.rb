@@ -2,9 +2,25 @@ GeohuntServer::Application.routes.draw do
     root :to => "home#index"
   
     resources :users
+    resources :tokens
 
-    match 'tracking/move_user/:user_id/:latitude/:longitude(/:format)' => 'tracking#move_user', :constraints => { :latitude => /[^\/]+/, :longitude => /[^\/]+/ }, :defaults => {:format => :json}
+    match 'tracking/move_user/:user_id/:latitude/:longitude(/:format)' => 'tracking#move_user', 
+                :constraints => { :latitude => /[^\/]+/, 
+                :longitude => /[^\/]+/ }, 
+                :defaults => {:format => :json}
+    match 'tracking/:action/gps/:latitude/:longitude(/:format)', 
+                :controller => 'tracking', 
+                :constraints => { :latitude => /[^\/]+/, :longitude => /[^\/]+/ }, 
+                :format => :json
+    match 'tracking/:action/range/:latitude_from/:latitude_to/:longitude_from/:longitude_to(/:format)', 
+                :controller => 'tracking', 
+                :constraints => { :latitude_from => /[^\/]+/, :latitude_to => /[^\/]+/, :longitude_from => /[^\/]+/, :longitude_to => /[^\/]+/, }, 
+                :format => :json
     match 'tracking/:action(/:id)', :controller => 'tracking', :format => :json
+    
+    match 'tokens/take/:user_id/:token_id' => 'tracking#take', :format => :json
+    match 'tokens/drop/:token_id' => 'tracking#take', :format => :json
+    
     match ':controller(/:action(/:id))(.:format)'
     
     
